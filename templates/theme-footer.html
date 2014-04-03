@@ -2,7 +2,11 @@
 <%! 
   from django.core.urlresolvers import reverse 
   from edxmako.shortcuts import marketing_link
+  from microsite_configuration import microsite
 %>
+
+<%! from django.utils.translation import ugettext as _ %> 
+
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
@@ -28,8 +32,8 @@
   <div class="su-container">
     <div class="su-row">
       <div id="su-footer-logo" class="span2">
-        <a href="http://www.stanford.edu">
-          <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
+        <a href="${'http://www.qzygz.com/'}">
+          <img src="/static/themes/stanford/images/seal.png" alt="Stanford University" height="49"/>
         </a>
       </div>
       <div id="su-footer-text" class="span10">
